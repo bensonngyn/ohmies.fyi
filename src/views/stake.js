@@ -576,11 +576,11 @@ function Stake(props) {
                       <td>Trojan King</td>
                     </tr>
                     <tr>
-                      <td>1,001 - 10,000</td>
+                      <td>1,001 - 25,000</td>
                       <td>Philosopher</td>
                     </tr>
                     <tr>
-                      <td>10,001 +</td>
+                      <td>25,001+</td>
                       <td>Greek God</td>
                     </tr>
                   </tbody>
