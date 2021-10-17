@@ -21,7 +21,7 @@ import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 
 // core components
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
+import CalculatorsNavbar from "components/Navbars/CalculatorsNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
@@ -33,7 +33,7 @@ import { BackgroundColorContext } from "contexts/BackgroundColorContext";
 
 var ps;
 
-function Admin(props) {
+function Calculators(props) {
   const location = useLocation();
   const mainPanelRef = React.useRef(null);
   const [sidebarOpened, setsidebarOpened] = React.useState(
@@ -80,7 +80,7 @@ function Admin(props) {
   };
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/Calculators") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -117,10 +117,10 @@ function Admin(props) {
             <div className="main-panel" ref={mainPanelRef} data={color}>
               <Switch>
                 {getRoutes(routes)}
-                <Redirect from="*" to="/admin/stake" />
+                <Redirect from="*" to="/Calculators/stake" />
               </Switch>
               {
-                location.pathname === "/admin/maps" ? null : <Footer fluid />
+                location.pathname === "/Calculators/maps" ? null : <Footer fluid />
               }
             </div>
           </div>
@@ -130,4 +130,4 @@ function Admin(props) {
   );
 }
 
-export default Admin;
+export default Calculators;

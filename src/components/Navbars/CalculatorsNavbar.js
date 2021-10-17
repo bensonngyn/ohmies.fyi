@@ -39,7 +39,7 @@ import {
   ModalHeader,
 } from "reactstrap";
 
-function aNavbar(props) {
+function CalculatorsNavbar(props) {
   const [collapseOpen, setcollapseOpen] = React.useState(false);
   const [modalSearch, setmodalSearch] = React.useState(false);
   const [color, setcolor] = React.useState("navbar-transparent");
@@ -197,4 +197,4 @@ function aNavbar(props) {
   );
 }
 
-export default aNavbar;
+export default CalculatorsNavbar;

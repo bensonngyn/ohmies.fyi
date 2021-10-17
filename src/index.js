@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import AdminLayout from "layouts/Admin/Admin.js";
+import CalculatorsLayout from "layouts/Calculators/Calculators.js";
 
 import "assets/scss/black-dashboard-react.scss";
 import "assets/demo/demo.css";
@@ -17,8 +17,8 @@ ReactDOM.render(
     <BackgroundColorWrapper>
       <BrowserRouter>
         <Switch>
-          <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-          <Redirect from="*" to="/admin/stake" />
+          <Route path="/Calculators" render={(props) => <CalculatorsLayout {...props} />} />
+          <Redirect from="*" to="/Calculators/stake" />
         </Switch>
       </BrowserRouter>
     </BackgroundColorWrapper>

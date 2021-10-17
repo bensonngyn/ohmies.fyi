@@ -12,28 +12,28 @@ var routes = [
     name: "Staking (3,3)",
     icon: "tim-icons icon-chart-pie-36",
     component: Stake,
-    layout: "/admin",
+    layout: "/Calculators",
   },
   {
     path: "/bond",
     name: "Bond (4,4)",
     icon: "tim-icons icon-atom",
     component: Bond,
-    layout: "/admin",
+    layout: "/Calculators",
   },
   {
     path: "/fuse",
     name: "Fuse (9,9)",
     icon: "tim-icons icon-pin",
     component: Fuse,
-    layout: "/admin",
+    layout: "/Calculators",
   },
   {
     path: "/riskgrowth",
     name: "Risk Growth",
     icon: "tim-icons icon-bell-55",
     component: RiskGrowth,
-    layout: "/admin",
+    layout: "/Calculators",
   }
 ];
 export default routes;
